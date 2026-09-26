@@ -498,12 +498,27 @@
           </div>
         </div>
       </article>
-      <button class="card__icon-button save-button">
+      <button
+        onclick="window['popup'].showModal()"
+        aria-controls="dialog-id"
+        class="save-button"
+      >
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39">
           <use href="./svg/floppy.svg#floppy"></use>
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
+      <dialog id="popup" class="popup__section">
+        <div class="popup__content-section">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39">
+            <use href="./svg/floppy.svg#floppy"></use>
+          </svg>
+          <p class="popup__text font-alt">Вставьте дискету, чтобы продолжить</p>
+        </div>
+        <button class="popup__button" onclick="window['popup'].close()">
+          <span class="button__text">ок</span>
+        </button>
+      </dialog>
     </main>
     <script src="./scripts/like.js"></script>
   </body>
