@@ -41,7 +41,7 @@
             <p>Место для ваших воспоминаний о начале обучения.</p>
           </div>
           <div class="article__buttons-section">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
                 class="like-icon"
                 width="39"
@@ -74,7 +74,7 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button">
+            <button type="button" class="card__like-button base-button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -104,7 +104,7 @@
             <p>Место для ваших воспоминаний о начале первого спринта.</p>
           </div>
           <div class="article__buttons-section">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
                 class="like-icon"
                 width="39"
@@ -137,7 +137,7 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button">
+            <button type="button" class="card__like-button base-button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -165,7 +165,7 @@
             <p>Место для ваших воспоминаний об окончании первого спринта.</p>
           </div>
           <div class="article__buttons-section">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
                 class="like-icon"
                 width="39"
@@ -198,7 +198,7 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button">
+            <button type="button" class="card__like-button base-button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -228,7 +228,7 @@
             <p>Место для ваших воспоминаний о начале второго спринта.</p>
           </div>
           <div class="article__buttons-section">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
                 class="like-icon"
                 width="39"
@@ -261,7 +261,7 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button">
+            <button type="button" class="card__like-button base-button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -292,7 +292,7 @@
             <p>Место для ваших воспоминаний об окончании второго спринта.</p>
           </div>
           <div class="article__buttons-section">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
                 class="like-icon"
                 width="39"
@@ -325,7 +325,7 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button">
+            <button type="button" class="card__like-button base-button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -349,7 +349,7 @@
             <p>Место для ваших воспоминаний о начале третьего спринта.</p>
           </div>
           <div class="article__buttons-section">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
                 class="like-icon"
                 width="39"
@@ -382,7 +382,7 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button">
+            <button type="button" class="card__like-button base-button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -408,7 +408,7 @@
             <p>Место для ваших воспоминаний об окончании третьего спринта.</p>
           </div>
           <div class="article__buttons-section">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
                 class="like-icon"
                 width="39"
@@ -441,7 +441,7 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button">
+            <button type="button" class="card__like-button base-button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -475,7 +475,7 @@
             </p>
           </div>
           <div class="article__buttons-section">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
                 class="like-icon"
                 width="39"
@@ -508,7 +508,7 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button">
+            <button type="button" class="card__like-button base-button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -517,7 +517,7 @@
       <button
         onclick="window['popup'].showModal()"
         aria-controls="dialog-id"
-        class="save-button"
+        class="save-button base-button"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -539,7 +539,11 @@
           </svg>
           <p class="popup__text font-alt">Вставьте дискету, чтобы продолжить</p>
         </div>
-        <button class="popup__button" onclick="window['popup'].close()">
+        <button
+          type="button"
+          class="popup__button base-button"
+          onclick="window['popup'].close()"
+        >
           <span class="button__text">ок</span>
         </button>
       </dialog>

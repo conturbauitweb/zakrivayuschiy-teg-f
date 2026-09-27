@@ -128,35 +128,35 @@
   gap: 6px;
 }
 
-.card__like-button {
+.base-button {
+  position: relative;
+  border: none;
   outline: 2px solid #000;
   outline-offset: -2px;
+  overflow: hidden;
   background-color: var(--button-bg-color);
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card__like-button {
   inline-size: 130px;
   block-size: 38px;
-  transition: box-shadow 0.3s ease;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
 }
 
 .card__like-button::before {
   content: "";
-  inset: 0;
   position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   background-color: var(--hover-color);
-  transform: translateX(-100%);
   transition: transform 0.5s ease-in-out;
+  transform: translateX(-100%);
 }
 
 .card__like-button:hover::before {
   transform: translateX(0);
-}
-
-.card__like-button:focus {
-  outline: none;
 }
 
 .card__like-button:focus-visible {
@@ -168,9 +168,9 @@
   align-items: center;
   border: none;
   padding: 0;
-  background-color: var(--button-bg-color);
   outline: 2px solid transparent;
   outline-offset: -2px;
+  background-color: var(--button-bg-color);
   transition: outline 0.3s ease;
   cursor: pointer;
 }
@@ -180,8 +180,8 @@
 }
 
 .card__icon-button:focus-visible {
-  outline-offset: -2px;
   outline: 2px solid var(--accent-color);
+  outline-offset: -2px;
 }
 
 .save-button {
@@ -190,14 +190,7 @@
   align-items: center;
   gap: 8px;
   padding: 15px 0;
-  outline: 2px solid #000;
-  outline-offset: -2px;
-  background-color: var(--button-bg-color);
   inline-size: 335px;
-  transition: box-shadow 0.3s ease;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
 }
 
 .floppy-icon {
@@ -218,21 +211,17 @@
 
 .save-button::before {
   content: "";
-  inset: 0;
   position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   background-color: var(--hover-color);
-  transform: translateX(-100%);
   transition: transform 0.5s ease-in-out;
+  transform: translateX(-100%);
 }
 
 .save-button:hover::before {
   transform: translateX(0);
-}
-
-.save-button:focus {
-  outline: none;
 }
 
 .save-button:focus-visible {
@@ -240,13 +229,13 @@
 }
 
 .button__text {
+  position: relative;
+  z-index: 1;
+  vertical-align: middle;
+  color: var(--button-color);
   font-family: var(--font-alt);
   font-size: 14px;
   line-height: 90%;
-  vertical-align: middle;
-  position: relative;
-  z-index: 1;
-  color: var(--button-color);
   mix-blend-mode: difference;
 }
 
@@ -279,27 +268,19 @@
 }
 
 .popup__button {
-  border: none;
   padding: 10px 0;
-  outline: 2px solid #000;
-  outline-offset: -2px;
-  background-color: var(--button-bg-color);
   text-transform: uppercase;
-  position: relative;
-  overflow: hidden;
-  transition: box-shadow 0.3s ease;
-  cursor: pointer;
 }
 
 .popup__button::before {
   content: "";
-  inset: 0;
   position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   background-color: var(--hover-color);
-  transform: translateX(-100%);
   transition: transform 0.5s ease-in-out;
+  transform: translateX(-100%);
 }
 
 .popup__button:hover::before {
@@ -387,17 +368,17 @@
 
 .like-icon.is-liked .core {
   fill: var(--animation-fill-color);
-  transition: 0.3s linear;
+  transition: fill 0.3s linear;
 }
 
 .like-icon.is-liked .main-body {
   fill: var(--animation-fill-color);
-  transition: 0.3s 0.05s linear;
+  transition: fill 0.3s 0.05s linear;
 }
 
 .like-icon.is-liked .contour {
   fill: var(--animation-fill-color);
-  transition: 0.3s 0.06s linear;
+  transition: fill 0.3s 0.06s linear;
 }
 
 .like-icon.is-liked .heart {
